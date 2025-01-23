@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applefun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="infoButton" class="info-button">Инфо</button>
+            <div id="infoPopup" class="info-popup">Нажимай "получать баланс" и начинай получать деньги и покупать игры!</div>
+            <div class="auth-buttons">
+                <button id="registerButton">получать баланс</button>
+                <button id="loginButton">получать баланс</button>
+                <button id="promoButton">Ввести промокод</button>
+                <div class="balance">Баланс: $<span id="balance">0</span></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="game-box">
+                <h2>Информация</h2>
+                <p>pufa hack это новейший вирус на фортнайт! Он очень прост в использовании и инджекте.</p>
+                <button id="buyButton">Купить игру за $1000</button>
+                <button id="downloadButton" class="hidden">Загрузить</button>
+                <div id="errorPopup" class="error-popup">Недостаточно средств</div>
+            </div>
+        </div>
+        <div id="promoPopup" class="promo-popup">
+            <input type="text" id="promoInput" placeholder="Введите промокод">
+            <button id="submitPromo">Применить</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #D1D1D1;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.info-button, .auth-buttons button, .balance, .game-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.info-button:hover, .auth-buttons button:hover, .game-box button:hover {
+    background-color: #919191;
+    transform: scale(1.05);
+}
+
+.balance {
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.game-box {
+    background-color: #E0E0E0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-box h2 {
+    margin-bottom: 10px;
+}
+
+.game-box p {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-popup, .error-popup, .promo-popup {
+    position: absolute;
+    background-color: #BFBFBF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.info-popup {
+    top: 50px;
+    left: 20px;
+}
+
+.error-popup {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.promo-popup {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #363636;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.promo-popup input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.promo-popup button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
